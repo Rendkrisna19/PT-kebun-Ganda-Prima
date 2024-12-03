@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (mysqli_query($conn, $sql)) {
         echo "<script>
-                alert('Data berhasil disimpan!');
+                alert('Saran sudah terkirim');
                 window.location.href = 'index.html';
               </script>";
     } else {

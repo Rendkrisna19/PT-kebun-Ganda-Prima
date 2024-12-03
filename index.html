@@ -12,6 +12,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+
+   <!---css animasi AOS CSS-->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
@@ -141,17 +145,17 @@
 
 <!-- about section starts  -->
 
-<section class="about" id="about">
+<section class="about" id="about" >
 
-   <h1 class="heading"> Tentang Kami </h1>
+   <h1 class="heading" data-aos="fade-up"> Tentang Kami </h1>
 
-   <div class="row">
+   <div class="row data-aos="fade-up"">
 
-      <div class="video">
-         <video src="images/about-vid.mp4" loop muted autoplay></video>
+      <div class="video"  data-aos="fade-up">
+         <video src="images/about-vid.mp4" loop muted autoplay  data-aos="fade-up"></video>
       </div>
 
-      <div class="content">
+      <div class="content"  data-aos="fade-up">
          <h3>Tentang PT Kebun Ganda Prima</h3>
          <p>PT Kebun Ganda Prima adalah perusahaan yang bergerak di bidang perkebunan kelapa sawit, berlokasi di Tayan Hulu, Kalimantan Barat. Berdiri sejak tahun 2017, perusahaan ini berkomitmen untuk mendukung pertumbuhan ekonomi berkelanjutan melalui pengelolaan perkebunan yang bertanggung jawab. Kami percaya bahwa kemitraan yang kuat dengan masyarakat sekitar dan perhatian terhadap lingkungan adalah kunci keberhasilan dalam menciptakan dampak positif bagi semua pihak.</p>
          <a href="#services" class="btn">read more</a>
@@ -159,7 +163,7 @@
 
    </div>
 
-   <div class="box-container">
+   <div class="box-container " data-aos="fade-right">
 
       <div class="box">
          <h3>2017</h3>
@@ -189,7 +193,7 @@
 
 <!-- services section starts  -->
 
-<section class="services" id="services">
+<section class="services" id="services" data-aos="fade-up-right">
 
    <h1 class="heading"> Visi Misi Kami </h1>
 
@@ -554,12 +558,12 @@
 
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3989.8086309030755!2d110.590256!3d0.126273!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDcnMzQuNiJOIDExMMKwMzUnMjQuOSJF!5e0!3m2!1sid!2sus!4v1732902260161!5m2!1sid!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <form action="proses.php" method="POST">
-         <h3>Get Now</h3>
-         <input type="text" name="name" placeholder="name" class="box" required>
-         <input type="email" name="email" placeholder="email" class="box" required>
-         <input type="number" name="phone" placeholder="phone" class="box" required>
-         <textarea name="message" placeholder="message" class="box" cols="30" rows="10" required></textarea>
-         <input type="submit" value="send message" class="btn">
+         <h3>Kritik Dan Saran </h3>
+         <input type="text" name="name" placeholder="nama kamu" class="box" required>
+         <input type="email" name="email" placeholder="email kamu" class="box" required>
+         <input type="number" name="phone" placeholder="No Hp kamu" class="box" required>
+         <textarea name="message" placeholder="Kritik Dan Saran" class="box" cols="30" rows="10" required></textarea>
+         <input type="submit" value="Kirim Pesan" class="btn">
      </form>
 
    </div>
@@ -675,6 +679,12 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+
+<!--js unutk AOS CSS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 <script>
 
