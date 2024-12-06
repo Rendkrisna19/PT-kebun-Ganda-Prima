@@ -340,6 +340,11 @@ section {
   text-transform: capitalize;
   padding: 1rem 0;
 }
+.map {
+  width: 100%;
+  height: 500px; /* Atur tinggi sesuai kebutuhan */
+  border: none; /* Hilangkan border */
+}
 
 .contact-info .info p {
   font-size: 1.5rem;
